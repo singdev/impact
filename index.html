@@ -48,6 +48,7 @@
             box-sizing: border-box;
             font-family: "Galano Classic Alt W00 Thin", sans-serif;
             font-weight: bold;
+            scroll-behavior: smooth;
         }
 
         .impact {
@@ -88,6 +89,12 @@
             display: grid;
             grid-template-columns: 50% 50%;
         }
+
+        @media screen and (max-width: 500px){
+            main {
+                grid-template-columns: auto;
+            }
+        }
     </style>
 </head>
 
@@ -97,7 +104,7 @@
 
         </div>
     
-        <div class="response-container">
+        <div id="form" class="response-container">
     
         </div>
     </main>

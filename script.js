@@ -31,6 +31,7 @@ function displayImpact(date, form, container) {
 }
 
 function showResponse(date, form) {
+    window.location = '#form';
     const container = document.querySelector('.response-container');
     freeContainer(container);
     for (let key in form) {
